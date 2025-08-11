@@ -3,8 +3,6 @@ const mockNews = [
    {
       id: 1,
       title: 'React 18 Released: What’s New?',
-      description:
-         'React 18 introduces concurrent rendering and automatic batching.',
       image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-11T10:30:00Z',
       author: 'Jane Doe',
@@ -12,7 +10,6 @@ const mockNews = [
    {
       id: 2,
       title: 'JavaScript Trends in 2025',
-      description: 'ES2025 brings new features and syntax improvements.',
       image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-10T10:30:00Z',
       author: 'John Smith',
@@ -20,7 +17,6 @@ const mockNews = [
    {
       id: 3,
       title: 'TypeScript vs JavaScript: Pros and Cons',
-      description: 'Why more developers are switching to TypeScript.',
       image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-09T10:30:00Z',
       author: 'Alice Johnson',
@@ -28,7 +24,6 @@ const mockNews = [
    {
       id: 4,
       title: 'State Management in React: Redux Toolkit',
-      description: 'Simplifying state management with Redux Toolkit.',
       image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-08T10:30:00Z',
       author: 'Bob Lee',
@@ -36,7 +31,6 @@ const mockNews = [
    {
       id: 5,
       title: 'Building Responsive Layouts with CSS Grid',
-      description: 'Modern techniques for adaptive web design.',
       image: 'https://images.unsplash.com/photo-1465101178521-c1a4c8a0f8f5?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-07T10:30:00Z',
       author: 'Clara Oswald',
@@ -44,7 +38,6 @@ const mockNews = [
    {
       id: 6,
       title: 'Next.js: Server-Side Rendering Made Easy',
-      description: 'How Next.js simplifies SSR for React apps.',
       image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-06T10:30:00Z',
       author: 'David Tennant',
@@ -52,7 +45,6 @@ const mockNews = [
    {
       id: 7,
       title: 'React Hooks: Best Practices',
-      description: 'Tips for using useEffect, useState, and custom hooks.',
       image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-05T10:30:00Z',
       author: 'Martha Jones',
@@ -60,7 +52,6 @@ const mockNews = [
    {
       id: 8,
       title: 'Testing React Components with Jest',
-      description: 'How to write robust tests for your UI.',
       image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-04T10:30:00Z',
       author: 'Jack Harkness',
@@ -68,7 +59,6 @@ const mockNews = [
    {
       id: 9,
       title: 'Deploying React Apps to Vercel',
-      description: 'Step-by-step guide for fast deployment.',
       image: 'https://images.unsplash.com/photo-1465101178521-c1a4c8a0f8f5?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-03T10:30:00Z',
       author: 'Rose Tyler',
@@ -76,7 +66,6 @@ const mockNews = [
    {
       id: 10,
       title: 'Optimizing Performance in React',
-      description: 'Techniques for faster rendering and smaller bundles.',
       image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
       published: '2025-08-02T10:30:00Z',
       author: 'Donna Noble',
