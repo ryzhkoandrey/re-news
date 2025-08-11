@@ -12,7 +12,12 @@ const Main = () => {
       const fetchNews = async () => {
          try {
             const response = await getNews();
-            setNews(response?.news ? response.news : mockNews);
+            if (Array.isArray(response?.news) && response.news.length > 0) {
+               setNews(response.news);
+            } else {
+               console.warn('Новости не получены или пусты. Используем mockNews');
+               setNews(mockNews);
+            }
          } catch (error) {
             console.log(error);
          }
