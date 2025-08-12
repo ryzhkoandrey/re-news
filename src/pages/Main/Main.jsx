@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getNews } from '../../api/apiNews';
 import NewsBanner from '../../components/NewsBanner/NewsBanner';
 import mockNews from '../../data/mockNews';
+import NewsList from '../../components/NewsList/NewsList';
 
 const Main = () => {
    const [news, setNews] = useState([]);
@@ -29,6 +30,7 @@ const Main = () => {
    return (
       <main className={styles.main}>
          {news.length > 0 ? <NewsBanner item={news[0]} /> : null}
+         <NewsList news={news} />
       </main>
    );
 };
