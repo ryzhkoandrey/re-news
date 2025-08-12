@@ -7,7 +7,6 @@ import NewsList from '../../components/NewsList/NewsList';
 
 const Main = () => {
    const [news, setNews] = useState([]);
-   console.log(news);
 
    useEffect(() => {
       const fetchNews = async () => {
@@ -16,8 +15,9 @@ const Main = () => {
             if (response?.news) {
                setNews(response.news);
             } else {
-               console.warn('Ошибка сервера. Используем mockNews');
                setNews(mockNews);
+               console.warn('Ошибка сервера. Используем mockNews');
+               console.log(news);
             }
          } catch (error) {
             console.log(error);
