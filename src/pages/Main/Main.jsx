@@ -1,8 +1,8 @@
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
 import { getNews } from '../../api/apiNews';
-import NewsBanner from '../../components/NewsBanner/NewsBanner';
 import mockNews from '../../data/mockNews';
+import NewsBanner from '../../components/NewsBanner/NewsBanner';
 import NewsList from '../../components/NewsList/NewsList';
 import Skeleton from '../../components/Skeleton/Skeleton';
 
@@ -13,18 +13,18 @@ const Main = () => {
    useEffect(() => {
       const fetchNews = async () => {
          try {
+            setIsLoading(true);
             const response = await getNews();
             if (response?.news) {
                setNews(response.news);
+               setIsLoading(false);
             } else {
                setNews(mockNews);
+               setIsLoading(false);
                console.warn('Ошибка сервера. Используем mockNews');
-               console.log(news);
             }
          } catch (error) {
             console.log(error);
-         } finally {
-            // setIsLoading(false);
          }
       };
 
@@ -39,7 +39,11 @@ const Main = () => {
             <Skeleton type="banner" count={1} />
          )}
 
-         <NewsList news={news} />
+         {!isLoading ? (
+            <NewsList news={news} />
+         ) : (
+            <Skeleton type="item" count={10} />
+         )}
       </main>
    );
 };
